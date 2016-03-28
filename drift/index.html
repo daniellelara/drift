@@ -16,6 +16,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.0/angular-moment.min.js"></script>
     
     <script src="src/js/app.js" charset="utf-8"></script>
+    <script src="js/vendor/bower_components/angular-touch/angular-touch.js" charset="utf-8"></script>
     <script src="src/js/controllers/video.js" charset="utf-8"></script>
     <script src="src/js/directives/video.js" charset="utf-8"></script>
 
@@ -33,9 +34,8 @@
     </form>
     <button ng-click="video.related(); video.clearTimer()" class="navbar-btn btn btn-default drift">DRIFT</button>
     </nav>
-    <div class="videoContainer">
+    <div ng-swipe-left="video.related(); video.clearTimer()" class="videoContainer">
       <youtube code="video.videoId"></youtube>
-      {{ video.videoId }}
     </div>
 
   </body>
