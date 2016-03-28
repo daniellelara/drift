@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'customFont';
+  src: url('/css/fonts/panton.light-caps.otf');
+}
+
 body {
   background: black;
+  font-family: 'customFont';
+ 
 }
 
 .videoContainer {
@@ -16,4 +23,15 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+nav.navbar{
+  background: #d7f9f1;
+}
+
+.navbar-btn.btn.btn-default.drift{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  
 }

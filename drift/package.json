@@ -24,5 +24,8 @@
     "Music"
   ],
   "author": "Max Hilliard, Danielle Gourgey, Acacia Mack",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.12.0"
+  }
 }
