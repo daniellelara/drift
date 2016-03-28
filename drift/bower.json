@@ -1,0 +1,26 @@
+{
+  "name": "drift",
+  "description": "A simple app using the YouTube API for video discovery",
+  "main": "js/app.js",
+  "authors": [
+    "Max Hilliard",
+    "Danielle Gourgey",
+    "Acacia Mack"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Video",
+    "Youtube",
+    "API",
+    "Music"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
