@@ -4,8 +4,7 @@
   "description": "A simple app using the YouTube API for video discovery",
   "main": "js/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/js/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
