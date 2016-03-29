@@ -50,6 +50,7 @@ input.form-control:focus {
   margin-right: 10px;
   text-align: center;
   outline: none;
+  transition: all 1s ease-out;
 }
 
 .navbar-btn.btn.btn-default.drift:active {
@@ -60,6 +61,7 @@ input.form-control:focus {
   border: none;
   box-shadow: none;
   outline: none;
+  transform: rotate(360deg);
 }
 
 #submitButton:hover {
