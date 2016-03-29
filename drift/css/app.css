@@ -1,16 +1,15 @@
 @font-face {
   font-family: 'customFont';
-  src: url('/css/fonts/panton.light-caps.otf');
+  src: url("/css/fonts/panton.light-caps.otf");
 }
 
 body {
   background: black;
   font-family: 'customFont';
- 
 }
 
 .videoContainer {
-  position: relative;
+  z-index: -1;
   padding-bottom: 56.26%;
   padding-top: 40px;
   height: 0;
@@ -25,13 +24,74 @@ iframe {
   height: 100%;
 }
 
-nav.navbar{
-  background: #d7f9f1;
+nav.navbar {
+  background: rgba(255, 255, 255, 0.7);
+  /*#d7f9f1*/
+  z-index: 1;
 }
 
-.navbar-btn.btn.btn-default.drift{
-  height: 80px;
-  width: 80px;
+input.form-control {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input.form-control:focus {
+  outline: none;
+}
+
+.navbar-btn.btn.btn-default.drift {
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  
+  background: #5AD1CE;
+  border: none;
+  box-shadow: 4px 0px #4E8280;
+  float: right;
+  margin-right: 10px;
+  text-align: center;
+  outline: none;
+}
+
+.navbar-btn.btn.btn-default.drift:active {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #5AD1CE;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+#submitButton:hover {
+  color: #333;
+  background-color: #5AD1CE;
+}
+
+#submitButton {
+  background: transparent;
+  border: none;
+}
+
+.hiddenNav {
+  height: 1px;
+}
+
+.about {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.sine {
+  background-size: cover;
+  height: 180px;
+  margin-left: -25px;
+  margin-top: -20px;
 }

@@ -24,19 +24,21 @@
   </head>
   <body ng-controller='VideoController as video'>
     <!-- NAV -->
-    <nav class="navbar">
-    <form ng-submit="video.request(); video.clearTimer()" class="navbar-form navbar-left" role="search">
+    <nav class="navbar hiddenNav">
+    <form ng-submit="video.request(); video.clearTimer(); video.hideAbout()" class="navbar-form navbar-left hiddenNav" role="search">
 
       <div class="form-group">
         <input ng-model="video.search" type="text" class="form-control" placeholder="Search">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button id="submitButton" type="submit" class="btn btn-default">drift</button>
     </form>
-    <button ng-click="video.related(); video.clearTimer()" class="navbar-btn btn btn-default drift">DRIFT</button>
+    <button ng-click="video.related(); video.clearTimer()" class="navbar-btn btn btn-default drift"><img class="sine" src="css/images/sine.png"></button>
     </nav>
     <div ng-swipe-left="video.related(); video.clearTimer()" class="videoContainer">
       <youtube code="video.videoId"></youtube>
     </div>
+
+    <div ng-class="video.hideAboutStatus ? 'hidden' : '' " class="about">Drift helps you to discover new content. Type a topic into the search bar to start your first video. To find more press the DRIFT&#169 button.</div>
 
   </body>
 </html>

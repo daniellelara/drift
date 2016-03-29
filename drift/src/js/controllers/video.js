@@ -7,8 +7,14 @@ angular.module('drift')
     var self = this
     this.timer = null;
     this.search = null;
+    this.hideAboutStatus = false;
     self.videoId = null;
     this.currentDuration = null;
+
+    self.hideAbout = function(){
+      self.hideAboutStatus = true;
+    }
+
 
     self.clearTimer = function(){
       console.log("Clear timer called");
