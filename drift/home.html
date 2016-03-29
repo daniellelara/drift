@@ -32,7 +32,7 @@
       </div>
       <button id="submitButton" type="submit" class="btn btn-default">drift</button>
     </form>
-    <button ng-click="video.related(); video.clearTimer()" class="navbar-btn btn btn-default drift"><img class="sine" src="css/images/sine.png"></button>
+    <button ng-click="video.related(); video.clearTimer(); video.hideAbout()" class="navbar-btn btn btn-default drift"><img class="sine" src="css/images/sine.png"></button>
     </nav>
     <div ng-swipe-left="video.related(); video.clearTimer()" class="videoContainer">
       <youtube code="video.videoId"></youtube>
